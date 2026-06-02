@@ -1,0 +1,25 @@
+# Rust
+target/
+
+# Node
+node_modules/
+dist/
+*.local
+
+# Env
+.env
+
+# 本地 Docker Compose（从 docker-compose.example.yml 复制）
+docker-compose.yml
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SQLx (optional offline cache)
+.sqlx/

@@ -1,0 +1,22 @@
+[package]
+name = "api"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+domain = { path = "../domain" }
+infra = { path = "../infra" }
+axum = { workspace = true }
+chrono = { workspace = true }
+jsonwebtoken = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+tower-http = { workspace = true }
+tracing = { workspace = true }
+dashmap = { workspace = true }
+moka = { workspace = true }
+redis = { workspace = true }
+uuid = { workspace = true }
+utoipa = { workspace = true }
+utoipa-swagger-ui = { workspace = true }

@@ -1,0 +1,16 @@
+[package]
+name = "infra"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+domain = { path = "../domain" }
+anyhow = { workspace = true }
+argon2 = { workspace = true }
+chrono = { workspace = true }
+rand = { workspace = true }
+sqlx = { workspace = true }
+thiserror = { workspace = true }
+uuid = { workspace = true }
+sha2 = { workspace = true }
+hex = { workspace = true }

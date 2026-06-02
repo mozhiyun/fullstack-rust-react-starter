@@ -1,0 +1,35 @@
+{
+  "name": "fullstack-rust-react-starter",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w web",
+    "dev:admin": "npm run dev -w admin",
+    "codegen": "bash scripts/codegen.sh",
+    "build": "npm run build -ws --if-present",
+    "lint": "npm run lint -ws --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "overrides": {
+    "admin": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1",
+      "@types/react": "18.3.12",
+      "@types/react-dom": "18.3.1"
+    },
+    "@refinedev/devtools-server": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1"
+    },
+    "@refinedev/devtools-internal": {
+      "react": "18.3.1",
+      "react-dom": "18.3.1",
+      "@types/react": "18.3.12"
+    }
+  }
+}
