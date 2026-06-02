@@ -101,15 +101,16 @@ npm run codegen
 
 ## 用 CLI 创建新项目（`fsr`）
 
-CLI 在**独立仓库** [YOUR_ORG/fsr](https://github.com/YOUR_ORG/fsr)（本仓库仅为模板，不含 CLI 源码）：
+CLI 在**独立仓库** [mozhiyun/fsr](https://github.com/mozhiyun/fsr)（本仓库仅为模板，不含 CLI 源码）：
 
 ```bash
-cargo install --git https://github.com/YOUR_ORG/fsr
+cargo install --git https://github.com/mozhiyun/fsr
+# 或克隆：git clone git@github.com:mozhiyun/fsr.git
 fsr new my-app
 cd my-app && npm install
 ```
 
-`fsr` 默认 **git clone** 远程模板。本地开发请用：
+`fsr` 默认克隆 [mozhiyun/fullstack-rust-react-starter](https://github.com/mozhiyun/fullstack-rust-react-starter)。本地开发请用：
 
 ```bash
 fsr new demo-app --template-dir /path/to/fullstack-rust-react-starter
